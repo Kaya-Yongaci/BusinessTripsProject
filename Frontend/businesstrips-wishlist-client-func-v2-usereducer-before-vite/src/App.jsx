@@ -21,10 +21,8 @@ export default function App() {
         <div className="container">
             <header className="container h3">
                 <img src="/images/items/logo.png" height={60} alt="logo" />
-                <h2>Business Trips - Wishlist functional with JAVA & REACT</h2>
-                <h4>
-                    Version-2 (using useReducer with pure functions before (8))
-                </h4>
+                <h2>Business Trips Planer</h2>
+
             </header>
             {/*pass the initialWishlist and dispatch to the Wishlist component
            // toDo Exercices 2 - 3.2
