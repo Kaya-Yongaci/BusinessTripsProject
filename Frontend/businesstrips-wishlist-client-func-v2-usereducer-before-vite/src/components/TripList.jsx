@@ -61,15 +61,20 @@ function Trip({ dispatch, trip }) {
                 </div>
                 <figcaption className="info-wrap">
                     <a href="" className="title">
-                        {title}
+                        <span className="trip-label">Trip ID:</span> {id}
                     </a>
+                    <div className="trip-meta">
+                        <div className="trip-meta-label"><strong>Town:</strong></div>
+                        <div className="trip-meta-value">{title}</div>
+                        <div className="trip-meta-label"><strong>What we're doing:</strong></div>
+                        <div className="trip-meta-value">{description}</div>
+                    </div>
                     <div className="trip-times">
                         <div className="trip-time-label"><strong>Start:</strong></div>
                         <div className="trip-time-value">{startTrip.toString()}</div>
                         <div className="trip-time-label"><strong>End:</strong></div>
                         <div className="trip-time-value">{endTrip.toString()}</div>
                     </div>
-                    <p className="card-text">{description}</p>
                     <div className="info-wrap row">
                         <button
                             type="button"

@@ -1,4 +1,3 @@
-
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -99,12 +98,12 @@ function Wish(props) {
             <figcaption className="media-body">
               <h6 className="h6">{title}</h6>
               <dl className="dlist-inline small">
-                <dt>Start: </dt>
+                <dt>Start:</dt>
                 <dd>{startTrip}</dd>
-              </dl>
-              <dl className="dlist-inline small">
-                <dt>End: </dt>
+                <dt>End:</dt>
                 <dd>{endTrip}</dd>
+                <dt>Description:</dt>
+                <dd>{description}</dd>
               </dl>
             </figcaption>
           </figure>
@@ -118,11 +117,11 @@ function Wish(props) {
         <span className="media-body">
           <div>
             <FontAwesomeIcon icon={faHeart} className="fa-thin fa-heart"/>
+            <span className="wishlist-label">Like</span>
             </div>
         </span>
         </td>
-
-        <td className="price-wrap price">{description}</td>
+        <td className="price-wrap price"><span className="wishlist-label">Description:</span> {description}</td>
         <td className="text-right">
           <button
               className="btn btn-outline-danger"

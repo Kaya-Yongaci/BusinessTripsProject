@@ -75,9 +75,15 @@ h2, h3, h4 {
   border-radius: 14px;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
   border: none;
-  padding: 1.2em 0.7em 1.5em 0.7em;
+  padding: 1.2em 1.5em 1.5em 1.5em;
   margin-bottom: 1.5em;
   transition: transform 0.15s;
+  min-width: 370px;
+  max-width: 520px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .card-product:hover {
   transform: translateY(-6px) scale(1.03);
@@ -174,4 +180,73 @@ footer {
   font-size: 1em;
   text-align: left;
   font-family: 'Roboto Mono', 'Consolas', monospace;
+}
+
+.wishlist-label {
+  display: inline-block;
+  font-size: 0.95em;
+  color: #274690;
+  margin-left: 0.3em;
+  font-weight: 500;
+}
+.dlist-inline dt {
+  font-weight: 600;
+  color: #1a365d;
+  margin-right: 0.2em;
+}
+.dlist-inline dd {
+  margin-right: 1.2em;
+  color: #274690;
+  display: inline;
+}
+
+.trip-label {
+  color: #274690;
+  font-size: 1em;
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+.trip-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.2em 0.7em;
+  margin: 0.5em 0 1em 0;
+  align-items: center;
+}
+.trip-meta-label {
+  color: #274690;
+  font-size: 1em;
+  text-align: right;
+}
+.trip-meta-value {
+  color: #1a365d;
+  font-size: 1em;
+  text-align: left;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.trip-meta, .trip-times {
+  grid-template-columns: 140px 1fr;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 1.5rem;
+  justify-content: center;
+}
+.col-sm-6.col-md-4.col-lg-3 {
+  flex: 1 1 45%;
+  max-width: 48%;
+  min-width: 370px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 900px) {
+  .col-sm-6.col-md-4.col-lg-3 {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 90vw;
+  }
 }
