@@ -1,3 +1,10 @@
+/* Modern, clean, business-travel inspired design */
+body {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -33,10 +40,119 @@
   }
 }
 
-.card {
-  padding: 2em;
+.container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.read-the-docs {
-  color: #888;
+header.container {
+  background: transparent;
+  box-shadow: none;
+  padding-bottom: 0;
+}
+
+h2, h3, h4 {
+  color: #1a365d;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  border: none;
+  padding: 1.5em 1em;
+  margin-bottom: 1.5em;
+  background: #f8fafc;
+}
+
+.card-product {
+  background: #f4f8fb;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  border: none;
+  padding: 1.2em 0.7em 1.5em 0.7em;
+  margin-bottom: 1.5em;
+  transition: transform 0.15s;
+}
+.card-product:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
+}
+
+.img-fluid, .img-thumbnail {
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 180px;
+  width: 100%;
+  background: #e6eaf1;
+}
+
+.table {
+  background: #f8fafc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  vertical-align: middle !important;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-outline-danger {
+  border-color: #e57373;
+  color: #e57373;
+}
+.btn-outline-danger:hover {
+  background: #e57373;
+  color: #fff;
+}
+.btn-link {
+  color: #1a365d;
+  text-decoration: underline;
+}
+.btn-link:hover {
+  color: #274690;
+}
+
+footer {
+  margin-top: 2.5rem;
+  color: #7b8ca7;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+.alert-info {
+  background: #e0eafc;
+  color: #1a365d;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Wishlist table improvements */
+.table th, .table td {
+  border-top: none;
+}
+
+.media-body h6 {
+  color: #1a365d;
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e0eafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #b6c6e3;
+  border-radius: 8px;
 }
