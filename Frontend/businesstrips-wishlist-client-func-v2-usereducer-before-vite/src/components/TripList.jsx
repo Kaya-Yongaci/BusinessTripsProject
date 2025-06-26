@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLuggageCart } from '@fortawesome/free-solid-svg-icons';
@@ -64,11 +63,11 @@ function Trip({ dispatch, trip }) {
                     <a href="" className="title">
                         {title}
                     </a>
-                    <div className="price-wrap">
-                        <span className="price-new">{startTrip.toString()}</span>
-                    </div>
-                    <div className="price-wrap">
-                        <span className="price-new">{endTrip.toString()}</span>
+                    <div className="trip-times">
+                        <div className="trip-time-label"><strong>Start:</strong></div>
+                        <div className="trip-time-value">{startTrip.toString()}</div>
+                        <div className="trip-time-label"><strong>End:</strong></div>
+                        <div className="trip-time-value">{endTrip.toString()}</div>
                     </div>
                     <p className="card-text">{description}</p>
                     <div className="info-wrap row">

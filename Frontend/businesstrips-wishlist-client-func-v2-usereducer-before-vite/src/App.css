@@ -156,3 +156,22 @@ footer {
   background: #b6c6e3;
   border-radius: 8px;
 }
+
+.trip-times {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.2em 0.7em;
+  margin: 0.7em 0 1em 0;
+  align-items: center;
+}
+.trip-time-label {
+  color: #274690;
+  font-size: 1em;
+  text-align: right;
+}
+.trip-time-value {
+  color: #1a365d;
+  font-size: 1em;
+  text-align: left;
+  font-family: 'Roboto Mono', 'Consolas', monospace;
+}
