@@ -34,10 +34,14 @@ public class BusinessTripsBackendApplication {
 			BusinessTrip bt01 = new BusinessTrip(1L, "BT01", "San Francisco World Trade Center on new Server/IOT/Client ",  LocalDateTime.of(2021, 2, 13, 9, 00),  LocalDateTime.of(2021, 2, 15, 16, 56));
 			BusinessTrip bt02 = new BusinessTrip(2L, "BT02", "Santa Clara Halley on new Server/IOT/Client", LocalDateTime.of(2021, 6, 23, 9, 00),  LocalDateTime.of(2021, 6, 27, 16, 56));
 			BusinessTrip bt03 = new BusinessTrip(3L, "BT03", "San Cose City Halley on Docker/IOT/Client", LocalDateTime.of(2021, 12, 13, 9, 00),  LocalDateTime.of(2021, 12, 15, 16, 56));
+			BusinessTrip bt04 = new BusinessTrip(4L, "BT04", "Berlin Tech Summit", LocalDateTime.of(2022, 3, 10, 8, 30), LocalDateTime.of(2022, 3, 12, 17, 0));
+			BusinessTrip bt05 = new BusinessTrip(5L, "BT05", "Munich AI Expo", LocalDateTime.of(2022, 5, 5, 10, 0), LocalDateTime.of(2022, 5, 7, 18, 0));
 
 			businessTripRepository.save(bt01);
 			businessTripRepository.save(bt02);
 			businessTripRepository.save(bt03);
+			businessTripRepository.save(bt04);
+			businessTripRepository.save(bt05);
 
 			// save a couple of meetings
 
